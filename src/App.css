@@ -1,0 +1,37 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  font-family: "Grandstander", cursive;
+}
+
+h1 {
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  grid-row: 1 / -1;
+  place-self: stretch;
+  display: flex;
+}
+
+figure img {
+  width: 120px;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure figcaption {
+  padding-left: 15px;
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  place-items: center;
+  border: 1px solid lightgrey;
+  margin-top: 25px;
+  padding-right: 1rem;
+}
